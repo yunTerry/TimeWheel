@@ -8,8 +8,15 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
+import android.widget.TextView;
+
+import com.terry.wheelview.TimeListener;
+import com.terry.wheelview.TimeWheel;
 
 public class MainActivity extends AppCompatActivity {
+
+    TextView timetv;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +33,30 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+
+        timetv = (TextView) findViewById(R.id.timetv);
+        Button timebtn = (Button) findViewById(R.id.timebtn);
+        timebtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                new TimeWheel(MainActivity.this, new TimeListener() {
+                    @Override
+                    public void getTime(int[] time) {
+                        timetv.setText(getTimeStr(time));
+                    }
+                });
+            }
+        });
+    }
+
+    private String getTimeStr(int[] st) {
+        return new StringBuilder()
+                .append((st[0] < 10) ? ("0" + st[0]) : st[0]).append(":")
+                .append((st[1] < 10) ? ("0" + st[1]) : st[1])
+                .append(" ～ ")
+                .append((st[2] < 10) ? ("0" + st[2]) : st[2]).append(":")
+                .append((st[3] < 10) ? ("0" + st[3]) : st[3])
+                .toString();
     }
 
     @Override

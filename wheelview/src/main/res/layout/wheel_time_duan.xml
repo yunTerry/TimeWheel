@@ -52,7 +52,7 @@
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:gravity="center"
-        android:text="设置无效，开启时间应早于关闭时间"
+        android:text="设置无效，起始时间应早于终止时间"
         android:textColor="#f00"
         android:textSize="15sp"
         android:visibility="gone" />
