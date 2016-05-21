@@ -42,6 +42,10 @@ public class MainActivity extends AppCompatActivity {
                 new TimeWheel(MainActivity.this, new TimeListener() {
                     @Override
                     public void getTime(int[] time) {
+                        //time[0]  start hour
+                        //time[1]  start minute
+                        //time[2]  endhour
+                        //time[3]  end minute
                         timetv.setText(getTimeStr(time));
                     }
                 });
