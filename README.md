@@ -2,7 +2,7 @@
 ####TimeWheel Dialog to set the time period
 
 | Set Time   | Done  |
-|:----------:| -----:|
+|:----------:| :-----:|
 |![](pic/1.png)|![](pic/2.png)|
 
 ####Get the time period you set
