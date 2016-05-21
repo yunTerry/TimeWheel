@@ -5,6 +5,21 @@
 |:----------:| :-----:|
 |![](pic/1.png)|![](pic/2.png)|
 
+###Add the dependency
+##### step 1
+```gradle
+allprojects {
+	repositories {
+		...
+		maven { url "https://www.jitpack.io" }
+	}
+}
+```
+##### step 2
+```gradle
+compile 'com.github.yunTerry:TimeWheel:v2.1.0'
+```
+
 ####Get the time period you set
 ```java
 timebtn.setOnClickListener(new View.OnClickListener() {
