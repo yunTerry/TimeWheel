@@ -1,7 +1,7 @@
 ## TimeWheel
-####TimeWheel Dialog to set the time period
+#####TimeWheel Dialog to set the time period
 
-| Set Time   | Done  |
+| Set Time Period   | Done  |
 |:----------:| :-----:|
 |![](pic/1.png)|![](pic/2.png)|
 
@@ -20,7 +20,7 @@ allprojects {
 compile 'com.github.yunTerry:TimeWheel:v2.1.0'
 ```
 
-####Get the time period you set
+###Get the time period you set
 ```java
 timebtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -30,7 +30,7 @@ timebtn.setOnClickListener(new View.OnClickListener() {
                     public void getTime(int[] time) {
                         //time[0]  start hour
                         //time[1]  start minute
-                        //time[2]  endhour
+                        //time[2]  end hour
                         //time[3]  end minute
                         timetv.setText(getTimeStr(time));
                     }
@@ -38,5 +38,5 @@ timebtn.setOnClickListener(new View.OnClickListener() {
             }
         });
 ```
-##Thanks
-####https://github.com/maarek/android-wheel
+###Thanks
+#####https://github.com/maarek/android-wheel
