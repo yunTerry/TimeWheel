@@ -1,8 +1,8 @@
 ## TimeWheel
 #####TimeWheel Dialog to set the time period
 
-<img src="pic/1.png" width = "200" />
-<img src="pic/2.png" width = "200" />
+<img src="pic/1.png" width = "300" />
+<img src="pic/2.png" width = "300" />
 
 ###Add the dependency
 ##### step 1
