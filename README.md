@@ -1,11 +1,14 @@
 ## TimeWheel
-#####TimeWheel Dialog to set the time period
+
+##### TimeWheel Dialog to set the time period
 
 <img src="pic/1.png" width = "300" />
 <img src="pic/2.png" width = "300" />
 
-###Add the dependency
+### Add the dependency
+
 ##### step 1
+
 ```gradle
 allprojects {
 	repositories {
@@ -15,11 +18,13 @@ allprojects {
 }
 ```
 ##### step 2
+
 ```gradle
 compile 'com.github.yunTerry:TimeWheel:v2.1.0'
 ```
 
-###Get the time period you set
+### Get the time period you set
+
 ```java
 timebtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -37,5 +42,6 @@ timebtn.setOnClickListener(new View.OnClickListener() {
             }
         });
 ```
-###Thanks
-#####https://github.com/maarek/android-wheel
+### Thanks
+
+##### https://github.com/maarek/android-wheel
